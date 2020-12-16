@@ -164,6 +164,27 @@ video:hover ~ .video-actions {
   font-size: 3rem;
 }
 
+.atribucion {
+  padding: 5px 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 1000px;
+  background-color: #09b1ee;
+  transition: all 0.15s ease-in-out;
+}
+
+.atribucion:hover {
+  background-color: #098ebe;
+}
+
+.atribucion a {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1150px) {
   .main {
     grid-template-columns: 1fr;
