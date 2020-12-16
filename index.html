@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS MediaPlayer</title>
+    <link rel="stylesheet" href="assets/styles/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>JavaScript <strong>MediaPlayer</strong></h1>
+    </header>
+
+    <main class="main">
+      <section class="video-container">
+        <video id="video" src="./assets/static/ejercicio.mp4"></video>
+
+        <div id="video-actions" class="video-actions">
+          <button
+            type="button"
+            id="playpause-button"
+            class="video-action video-play"
+            title="Iniciar o pausar la reproducción del video"
+          >
+            <i id="playpause-icon" class="fas fa-play"></i>
+          </button>
+
+          <button
+            type="button"
+            id="sound-button"
+            class="video-action video-sound"
+            title="Mutear o desmutear video"
+          >
+            <i id="sound-icon" class="fas fa-volume-up"></i>
+          </button>
+
+          <button
+            type="button"
+            id="restart-button"
+            class="video-action video-restart"
+            title="Reiniciar el video"
+          >
+            <i id="restart-icon" class="fas fa-redo-alt"></i>
+          </button>
+
+          <button
+            type="button"
+            id="back-button"
+            class="video-action video-restart"
+            title="Retroceder 5 segundos"
+          >
+            <i id="back-icon" class="fas">-5s</i>
+          </button>
+
+          <button
+            type="button"
+            id="advance-button"
+            class="video-action video-restart"
+            title="Avanzar 5 segundos"
+          >
+            <i id="advance-icon" class="fas">+5s</i>
+          </button>
+        </div>
+      </section>
+
+      <aside class="video-features">
+        <h2>Características</h2>
+        <div class="features">
+          <h3 class="feature-title">AutoStop</h3>
+          <div class="feature">
+            <div class="feature-input">
+              <label class="feature-label" for="intersection-autostop"
+                >Intersection</label
+              >
+              <input
+                class="feature-checkbox"
+                type="checkbox"
+                name="autoplay"
+                id="intersection-autostop"
+              />
+            </div>
+
+            <h4 class="feature-description">
+              Activando esta opción, cada vez que hagas scroll el video se
+              pausará automáticamente si este está menos del 40% visible y se
+              reanudará si este entra en el rango nuevamente.
+            </h4>
+          </div>
+
+          <div class="feature">
+            <div class="feature-input">
+              <label class="feature-label" for="visibility-autostop"
+                >PageVisibility</label
+              >
+              <input
+                class="feature-checkbox"
+                type="checkbox"
+                name="visibility-autostop"
+                id="visibility-autostop"
+              />
+            </div>
+
+            <h4 class="feature-description">
+              Activando esta opción, cada vez que cambies de pestaña, el video
+              se pausará automáticamente.
+            </h4>
+          </div>
+
+          <h3 class="feature-title">AutoPlay</h3>
+          <div class="feature">
+            <div class="feature-input">
+              <label class="feature-label" for="autoplay">AutoPlay</label>
+              <input
+                class="feature-checkbox"
+                type="checkbox"
+                name="autoplay"
+                id="autoplay"
+              />
+            </div>
+
+            <h4 class="feature-description">
+              Activando esta opción, cada vez que abras esta página, el video
+              comenzará a reproducirse automáticamente, pero sin sonido.
+              (recarga la página para ver los cambios).
+            </h4>
+          </div>
+        </div>
+      </aside>
+
+      <div class="empty-zone">
+        <h2>Lugar vacio para que puedas scrollear y probar las funciones</h2>
+      </div>
+
+      <script type="module" src="./assets/js/index.js"></script>
+    </main>
+  </body>
+</html>
