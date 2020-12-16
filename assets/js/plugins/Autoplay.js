@@ -25,8 +25,6 @@ class Autoplay {
       this.player.play();
     }
   }
-
-  desactivateAutoplay() {}
 }
 
 export default Autoplay;
