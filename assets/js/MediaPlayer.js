@@ -90,8 +90,4 @@ MediaPlayer.prototype.advance = function () {
   this.media.currentTime += 5;
 };
 
-MediaPlayer.prototype.setAutoplay = function () {
-  const { Autoplay } = this.plugins;
-};
-
 export default MediaPlayer;

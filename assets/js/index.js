@@ -61,5 +61,4 @@ localStorage.getItem("autoplay") === "true"
 
 autoplayCheckbox.addEventListener("click", () => {
   localStorage.setItem("autoplay", autoplayCheckbox.checked);
-  player.setAutoplay(autoplayCheckbox.checked);
 });

@@ -14,8 +14,6 @@ class Autoplay {
     const isAutoplay = localStorage.getItem("autoplay");
     if (isAutoplay === "true") {
       this.activateAutoplay();
-    } else {
-      this.desactivateAutoplay();
     }
   }
 
