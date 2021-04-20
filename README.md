@@ -6,4 +6,6 @@ Inspirado en el proyecto creado en el curso de [JavaScript Profesional](https://
 
 Este proyecto utiliza conceptos de <b>POO</b>, tales como "clases" y prototipos así como también APIs del DOM como <b>localStorage</b>, <b>IntersectionObserver</b> y <b>PageVisibility</b>
 
-Link del [Live View](https://lamaolo.github.io/javascript-videoplayer/)
+### Link del [Live View](https://lamaolo.github.io/javascript-videoplayer/)
+
+_Si el video no carga, descargar proyecto y correrlo en servidor local_
